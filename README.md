@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Name</title>
+    <title>Welcome to PARVEZ MUSHARAF'S Page</title>
     <style>
         body {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #34495e;
             font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            flex-direction: column;
         }
 
         h1 {
             font-size: 4em;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            -webkit-background-clip: text;
+            color: #ecf0f1;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #bdc3c7;
+            margin-top: 10px;
+        }
+
      

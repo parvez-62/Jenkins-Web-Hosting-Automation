@@ -19,7 +19,41 @@
 
         .container {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 40px;
-            border-radius: 15px;
-           
+        }
+
+        h1 {
+            font-size: 6em;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            animation: shine 4s infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: -500% 0;
+            }
+            100% {
+                background-position: 500% 0;
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #ecf0f1;
+            margin-top: 20px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO PARVEZ MUSHARAF'S WEBPAGE</h1>
+        <p>We are glad to have you here. Explore and enjoy the page!</p>
+    </div>
+</body>
+</html>

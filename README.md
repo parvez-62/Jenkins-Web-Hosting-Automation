@@ -1,4 +1,4 @@
-# Web Hosting using Jenkins
+# Jenkins Web Hosting Automation
 
 This project demonstrates how to set up automated web hosting using Jenkins CI/CD pipeline. The project uses Jenkins to automatically deploy web content from a GitHub repository to a web server.
 

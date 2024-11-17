@@ -124,12 +124,17 @@ Common issues and solutions:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Viewing the Result
+
 After successful deployment, your webpage will be accessible at:
 
-```http://[your-server-ip]/web-hosting-using-jenkins-pipeline/[page].html
-Example: http://3.90.62.178/web-hosting-using-jenkins-pipeline/parvez.html```
+
+```http://[your-server-ip]/web-hosting-using-jenkins-pipeline/[page].html```
+
+```Example: http://3.90.62.178/web-hosting-using-jenkins-pipeline/parvez.html```
 
 final 
 
-![Screenshot (49)](https://github.com/user-attachments/assets/beb684f8-404a-4291-841a-e0cac947d28e)
+![Screenshot (49)](https://github.com/user-attachments/assets/f9678e9c-045a-47a3-ac49-b368e0c3b4d7)
+
+
 

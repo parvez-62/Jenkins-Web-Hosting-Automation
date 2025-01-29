@@ -56,25 +56,19 @@ sudo apt install jenkins
 
 ## Pipeline Configuration
 
-```groovy
-pipeline {
-    agent any
-    
-    stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/your-username/your-repo.git'
-            }
-        }
-        
-        stage('Deploy') {
-            steps {
-                sh 'cp -r * /var/www/html/'
-            }
-        }
-    }
-}
+```#!/bin/bash
+# Change to the Jenkins workspace directory where the repository is cloned
+cd $WORKSPACE
+
+# Clean up the existing files in /var/www/html
+sudo rm -rf /var/www/html/*
+
+# Copy the files from the Jenkins workspace to Apache's web directory
+sudo cp -r * /var/www/html/
+
+# Set the correct permissions for the files
+sudo chown -R www-data:www-data /var/www/html
+sudo chmod -R 755 /var/www/html
 ```
 
 ## Project Structure
@@ -128,9 +122,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 After successful deployment, your webpage will be accessible at:
 
 
-```http://[your-server-ip]/web-hosting-using-jenkins-pipeline/[page].html```
+```http://[your-server-ip]```
 
-```Example: http://3.90.62.178/web-hosting-using-jenkins-pipeline/parvez.html```
 
 final 
 
